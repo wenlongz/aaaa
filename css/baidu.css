@@ -1,0 +1,133 @@
+	*{
+				margin: 0;
+				padding: 0;
+				outline: none;
+			}
+			
+			li{
+				list-style: none;
+			}
+			.header ul{
+				overflow: hidden;
+				padding-top: 15px;
+				padding-right: 3px;
+			}
+			.header li{
+				float:right;
+				padding:0 7px;
+				
+			}
+			.header a{display: inline-block;
+				line-height:25px ;
+				font-size: 13px;
+				padding: 0px 3px;
+				font: "微软雅黑";
+				color: black;
+			}
+		.header	.more{
+				background: rgb(51,136,255);
+				color: white;
+				text-decoration: none;
+				
+			}
+			.input, .logo{
+				text-align: center;
+			}
+			.logo img{
+				width:270px ;
+				height: 129px;
+			}
+			.input{
+				text-align: left;
+				margin-left: 29%;
+				margin-top: 30px;
+			}
+			.input input{
+			height: 22px;
+			width: 95%;	
+			
+			border: none;
+			display:inline-block;}
+			.input .wb{width:50%;
+			float: left;
+				display: inline-block;
+			
+				border: solid 1px rgb(204,204,204);
+				padding: 6px;
+			}
+
+			.camera{
+				display: inline-block;
+				width: 5%;
+			float: right;
+				height:19px ;
+				background: url(../img/camera_new_5606e8f.png) no-repeat  left top;
+				
+			}
+			.camera:hover{
+				background: url(../img/camera_new_5606e8f.png) no-repeat  left bottom;
+			}
+			.sch{
+				display: inline-block;
+				line-height:36px;
+				color: white;
+				width: 10%;
+				text-align: center;
+				background:rgb(51,133,255) ;
+			
+			}
+			.body_btm{
+				padding-top: 61px;
+				padding-bottom: 178px;
+				text-align: center;
+				color: rgb(102,102,102);
+			}
+			.body_btm a{
+				color: rgb(102,102,102);
+				margin-left: 5px;
+			}
+			._last{
+				text-align: center;
+			}
+			._last ._left,._last ._mid{
+				width: 17%;
+				display: inline-block;
+				text-align: left;
+			}
+			._last ._right{
+				display: inline-block;
+				width: 40%;
+			
+				height: 100px;
+			}
+			._last{
+				padding-left: 25%;
+			}
+			._last span{
+				float: left;
+				overflow: hidden;
+			}
+			.nei{
+				width: 50%;
+			}
+			._nei{
+				line-height: 30px;
+				font-size: 13px;
+				color: gray;
+			}
+			._last ._right{
+				text-align: left;
+				font-size: 13px;
+				color: gray;
+			}
+			._last ._right a{
+				font-size: 13px;
+				color: gray;
+				margin-right: 20px;
+			}
+			._last ._right ._nom{
+				margin-right: 10px;
+			}
+			._last ._right ._nom1{
+				margin-right: 0px;
+			}

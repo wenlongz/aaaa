@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/baidu.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/baidu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		var app=angular.module("swcats",[])
+		app.controller("indexCtrl",function($scope,$http,$sce){
+			$http.get("baidu.json").success(function  (data) {
+				$scope.navs=data
+				$scope.html=data[6].name
+//				$scope.html = $sce.trustAsHtml($scope.html);
+               $scope.html=$sce.trustAsHtml($scope.html)
+			})
+//			$scope.html="<a href='#'>登录</a>"
+			
+		})
+		</script>
+	</head>
+	<body ng-app="swcats">
+		<div class="header" ng-controller="indexCtrl">
+			<ul>
+<li><a href="#" class="more">更多产品</a></li>	
+<li><a href="#">设置</a></li>
+<li ng-bind-html="html"></li>
+<li><a href="#"><b>{{navs[5].name}}</b></a></li>	
+<li><a href="#"><b>{{navs[4].name}}</b></a></li>	
+<li><a href="#"><b>{{navs[3].name}}</b></a></li>	
+<li><a href="#"><b>{{navs[2].name}}</b></a></li>
+<li><a href="#"><b>{{navs[1].name}}</b></a></li>		
+<li><a href="#"><b>{{navs[0].name}}</b></a></li>
+
+			</ul>
+		</div>
+		<div class="_body">
+			<div class="logo">
+				<img src="img/bd_logo1.png"/>
+			</div>
+			<div class="input">
+			<span class="wb"><input type="search" name="" id="" value="" /><span class="camera"></span></span><span class="sch">百度一下</span>
+			</div>
+			<div class="body_btm">
+				11.11狂欢：<a href="#">  京东商城</a><a href="#">   苏宁易购</a><a href="#">   1号店</a>
+			</div>
+		</div>
+		<div class="_last">
+			<span class="_left">
+			<span class="nei"><img src="img/zbios_efde696.png"/></span>	
+				<span class="nei _nei"><b>手机百度</b><br />快人一步</span>
+			</span>
+				<span class="_mid">
+				
+				<span class="nei"><img src="img/zbios_efde696.png"/></span>
+				<span class="nei _nei"><b>百度糯米</b><br />一元大餐</span>
+			</span>
+			<span class="_right">
+		<p><a href="#">把百度设为主页</a><a href="#">关于百度</a><a href="#">About  Baidu</a><a href="#">百度推广</a></p>	
+<p>©2016 Baidu <a class="_nom" href="#">使用百度前必读</a><a class="_nom1" href="#">意见反馈 </a> 京ICP证030173号 </p>
+<p><a href="#">京公网安备11000002000001号</a></p>
+
+
+			</span>
+		</div>
+	</body>
+</html>
